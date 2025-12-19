@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mac & PC Accessories Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body{
+      background:#f5f5f7;
+      color:#1d1d1f;
+    }
+
+    /* HEADER */
+    header{
+      background:linear-gradient(90deg,#000,#333);
+      color:white;
+      padding:30px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:36px;
+      margin-bottom:5px;
+    }
+
+    /* NAVIGATION */
+    nav{
+      background:#1d1d1f;
+      text-align:center;
+      position:sticky;
+      top:0;
+    }
+
+    nav a{
+      display:inline-block;
+      color:white;
+      text-decoration:none;
+      padding:15px 22px;
+      font-weight:500;
+    }
+
+    nav a:hover{
+      background:#0a66c2;
+    }
+
+    /* HERO SECTION */
+    .hero{
+      padding:60px 20px;
+      text-align:center;
+      background:white;
+    }
+
+    .hero h2{
+      font-size:32px;
+      margin-bottom:10px;
+    }
+
+    .hero p{
+      font-size:18px;
+      color:#555;
+    }
+
+    /* SECTION */
+    section{
+      padding:40px 20px;
+    }
+
+    section h2{
+      text-align:center;
+      font-size:28px;
+      margin-bottom:30px;
+    }
+
+    /* PRODUCT GRID USING FLOAT */
+    .product{
+      width:30%;
+      float:left;
+      margin:1.5%;
+      background:white;
+      border-radius:12px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.08);
+      padding:15px;
+      text-align:center;
+    }
+
+    .product img{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+      border-radius:10px;
+      margin-bottom:15px;
+    }
+
+    .product h3{
+      margin-bottom:8px;
+    }
+
+    .price{
+      font-size:18px;
+      font-weight:bold;
+      margin:10px 0;
+    }
+
+    .product button{
+      background:#0a66c2;
+      color:white;
+      border:none;
+      padding:10px 18px;
+      border-radius:20px;
+      cursor:pointer;
+    }
+
+    .product button:hover{
+      background:#004182;
+    }
+
+    /* CLEAR FLOAT */
+    .clear{ clear:both; }
+
+    /* CATEGORY TAG */
+    .tag{
+      display:inline-block;
+      background:#e6f0fa;
+      color:#0a66c2;
+      padding:4px 10px;
+      border-radius:15px;
+      font-size:12px;
+      margin-bottom:8px;
+    }
+
+    /* FOOTER */
+    footer{
+      background:#1d1d1f;
+      color:white;
+      text-align:center;
+      padding:25px;
+    }
+
+    footer a{
+      color:#0a66c2;
+      text-decoration:none;
+      margin:0 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header id="home">
+  <h1>MacStyle Store</h1>
+  <p>Premium Accessories for MacBook & PC</p>
+</header>
+
+<nav>
+  <a href="https://www.apple.com/in/tv-home/">Home</a>
+  <a href="https://www.apple.com/in/store">Store</a>
+  <a href="https://www.apple.com/in/services/">Entertainment</a>
+  <a href="https://support.apple.com/en-in?cid=gn-ols-home-hp-tab">Support</a>
+  <a href="https://www.apple.com/in/airpods/">Air Pods</a>
+  <a href="https://www.apple.com/in/tv-home/">TV & Home</a>
+  <a href="https://www.apple.com/in/ipad/">iPad</a>
+
+</nav>
+
+<section class="hero">
+  <h2>Protect • Style • Power Your Device</h2>
+  <p>High-quality skins, chargers & covers designed for professionals</p>
+</section>
+
+<!-- MACBOOK SECTION -->
+<section id="macbook">
+  <h2>MacBook Accessories</h2>
+
+  <div class="product">
+    <span class="tag">MacBook Skin</span>
+    <img src="mac image.jpg" alt="MacBook Skin">
+    <h3>Macbook Air</h3>
+    <p></p>
+    <div class="price">₹1,80,000</div>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <span class="tag">MacBook Cover</span>
+    <img src="https://m.media-amazon.com/images/I/510YEBSQWOL._AC_UL640_FMwebp_QL65_.jpg" alt="MacBook Cover">
+    <h3>Hard Shell Cover</h3>
+    <p>Shock-proof protection</p>
+    <div class="price">₹1,799</div>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <span class="tag">Mackbook skin</span>
+    <img src="https://m.media-amazon.com/images/I/619iikh9NfL._AC_UY436_FMwebp_QL65_.jpg" alt="MacBook skin">
+    <h3>Fast Charger 65W</h3>
+    <p>Safe & reliable product</p>
+    <div class="price">₹3,999</div>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="clear"></div>
+</section>
+
+<!-- PC SECTION -->
+<section id="pc">
+  <h2> Accessories</h2>
+
+  <div class="product">
+    <span class="tag">PC Skin</span>
+    <img src="https://m.media-amazon.com/images/I/61pIGfXoRIL._AC_UY436_FMwebp_QL65_.jpg" alt="PC Skin">
+    <h3>Laptop Skin (PC)</h3>
+    <p>Universal fit</p>
+    <div class="price">₹1,500</div>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <span class="tag">PC Charger</span>
+    <img src="https://m.media-amazon.com/images/I/51jCr5ZLrKL._AC_UL640_FMwebp_QL65_.jpg" alt="PC Charger">
+    <h3>Laptop Charger</h3>
+    <p>Compatible for MB Air 13 & MB Air 11</p>
+    <div class="price">₹2,499</div>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <span class="tag">Laptop Cover</span>
+    <img src="https://m.media-amazon.com/images/I/81Ia+4IPZLL._AC_UY436_FMwebp_QL65_.jpg" alt="Laptop Cover">
+    <h3>Protective Laptop cover</h3>
+    <p>Water-resistant</p>
+    <div class="price">₹1,299</div>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="clear"></div>
+</section>
+
+<footer id="contact">
+  <p>📧 support@macstylestore.com | 📞 000 800 100 9009</p>
+  <p>
+    ◊ Listed pricing is Maximum Retail Price (inclusive of all taxes).
+Footnote ∆ Instant cashback is available with the purchase of an eligible product with qualifying American Express, Axis Bank and ICICI Bank cards only. Minimum transaction value of ₹10001.00 applies. Click here to see instant cashback amounts and eligible devices. Instant cashback is available for up to two orders per rolling 90-day period with an eligible card. Card eligibility is subject to terms and conditions between you and your card issuer. Total transaction value is calculated after any trade-in credit or eligible discount is applied. Any subsequent order adjustment(s) or cancellation(s) may result in instant cashback being recalculated, and any refund may be adjusted to account for instant cashback clawback; this may result in no refund being made to you. Offer may be revised or withdrawn at any time without any prior notice. Additional terms apply. Instant cashback is not available to Business customers and cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Multiple separate orders cannot be combined for instant cashback.
+Footnote ± No Cost EMI is available with the purchase of an eligible product made using qualifying cards on 3- or 6-month tenures from most leading card issuers. Monthly pricing is rounded to the nearest rupee. Exact pricing will be provided by your card issuer, subject to your card issuer’s terms and conditions. Minimum order spend applies as per your card issuer’s threshold. No Cost EMI is not available to Business customers and cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Card eligibility is subject to terms and conditions between you and your card issuer. Offer may be revised or withdrawn at any time without any prior notice. Terms apply.
+Footnote † Monthly pricing is after purchase using EMI with qualifying cards at 15.99% p.a. over a 6‑month tenure. Monthly pricing is rounded to the nearest rupee. Exact pricing will be provided by your card issuer, subject to your card issuer’s terms and conditions.
+Footnote ‡ New and qualified returning subscribers only. ₹99/month after free trial. Apple TV subscription does not include third-party branded subscription services or content available for rental or purchase in the Apple TV app. Only one offer per Apple Account and only one offer per family if you’re part of a Family Sharing group, regardless of the number of devices that you or your family purchase. This offer is not available if you or your family have previously accepted an Apple TV subscription three-months-free or one-year-free offer. Offer valid for three months after eligible device has been activated. Plan automatically renews until cancelled. Restrictions and other terms apply.
+Footnote ※ To use iCloud you need at least iOS 10 on iPhone 5, iPod touch (6th generation), iPad (4th generation) or iPad mini 2; watchOS 3 on an Apple Watch; macOS Sierra 10.12 on a Mac; tvOS 4 on an Apple TV (4th generation); or visionOS 1 on an Apple Vision Pro; or a PC with Windows 11 or later (Outlook 2019 or later or an up-to-date browser is required for accessing email, contacts and calendars). Some features require iOS 16, iPadOS 16 and macOS Ventura. Some features require a Wi-Fi connection. Some features are not available in all countries or regions. Access to some services is limited to 10 devices.
+Footnote 
+1. 
+Special pricing available to qualified customers. To learn more about how to start qualifying for special pricing, talk to an Apple Specialist in a store or give us a call on 000800 040 1966.
+ 
+We use your location to show you delivery options faster. We found your location using your IP address or because you entered it during a previous visit to Apple.
+  
+  </p>
+  <p>© 2025 MacStyle Store</p>
+</footer>
+
+</body>
+</html>
